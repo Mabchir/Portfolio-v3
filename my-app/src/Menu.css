@@ -1,0 +1,90 @@
+.Menu {
+  position: relative;
+}
+.Menu li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 80px;
+  color: #2f2e41;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: lighter;
+  align-items: center;
+  text-align: center;
+}
+
+.Menu #part1 {
+  position: absolute;
+  left: 4.73%;
+
+  top: 38.22%;
+}
+
+.Menu #part2 {
+  position: absolute;
+  left: 36.73%;
+
+  top: 57.22%;
+}
+
+.Menu .current {
+  font-weight: bold;
+}
+
+.Menu li:hover {
+  text-decoration: underline;
+}
+
+.Menu a {
+  text-decoration: none;
+}
+.Menu img {
+  visibility: hidden;
+  width: 50px;
+}
+@media only screen and (max-width: 820px) {
+  .Menu li {
+    font-size: 14px;
+    margin-right: 40px;
+  }
+
+  .Menu #part1 {
+    position: absolute;
+    left: -0.73%;
+
+    top: 28.22%;
+  }
+
+  .Menu #part2 {
+    position: absolute;
+    left: 29.73%;
+
+    top: 47.22%;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .Menu img {
+    visibility: visible;
+  }
+
+  .Menu li {
+    font-size: 24px;
+    list-style-type: circle;
+    display: flex;
+    justify-content: center;
+  }
+  .Menu #part1,
+  .Menu #part2 {
+    position: static;
+    margin: 0px;
+  }
+
+  .Menu #menus {
+    display: none;
+  }
+
+  svg {
+    visibility: hidden;
+  }
+}
