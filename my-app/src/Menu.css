@@ -17,27 +17,20 @@
   position: absolute;
   left: 4.73%;
 
-  top: 38.22%;
+  top: 28.22%;
 }
 
 .Menu #part2 {
   position: absolute;
   left: 36.73%;
 
-  top: 57.22%;
-}
-
-.Menu .current {
-  font-weight: bold;
+  top: 47.22%;
 }
 
 .Menu li:hover {
   text-decoration: underline;
 }
 
-.Menu a {
-  text-decoration: none;
-}
 .Menu img {
   visibility: hidden;
   width: 50px;
@@ -52,14 +45,14 @@
     position: absolute;
     left: -0.73%;
 
-    top: 28.22%;
+    top: 18.22%;
   }
 
   .Menu #part2 {
     position: absolute;
     left: 29.73%;
 
-    top: 47.22%;
+    top: 37.22%;
   }
 }
 

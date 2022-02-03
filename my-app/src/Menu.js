@@ -1,7 +1,9 @@
 import React from "react";
 import "./Menu.css";
+import styled from 'styled-components';
 import MenuBar from "./images/menu-svgrepo-com.svg";
-export default function Menu() {
+
+export default function Menu(currentPage) {
   function showMenu() {
     var x = document.getElementById("menus");
     if (x.style.display === "block") {
@@ -19,30 +21,33 @@ export default function Menu() {
           d="M0,96L0,96L480,96L480,160L960,160L960,224L1440,224L1440,0L960,0L960,0L480,0L480,0L0,0L0,0Z"
         ></path>
       </svg>
-      <img src={MenuBar} onClick={showMenu} />
-
+      <img src={MenuBar} onClick={showMenu} alt="menubar" />
       <div id="menus">
         <ul id="part1">
-          <a href="#">
-            <li className="current">Home</li>
-          </a>
-          <a href="#">
-            <li>About</li>
-          </a>
-          <a href="#">
-            <li>Contact</li>
-          </a>
+          <li className="Home">
+            <Link to="/Home">Home</Link>
+          </li>
+
+          <li className="About">
+            <Link to="./About.js">About</Link>
+          </li>
+
+          <li className="Contact">
+            <Link to="/Contact">Contact</Link>
+          </li>
         </ul>
         <ul id="part2">
-          <a href="#">
-            <li>Education</li>
-          </a>
-          <a href="#">
-            <li>Portfolio</li>
-          </a>
-          <a href="#">
-            <li>Work</li>
-          </a>
+          <li className="Education">
+            <Link to="/Education">Education</Link>
+          </li>
+
+          <li className="Portfolio">
+            <Link to="/Portfolio">Portfolio</Link>
+          </li>
+
+          <li className="Work">
+            <Link to="/Work">Work</Link>
+          </li>
         </ul>
       </div>
     </div>

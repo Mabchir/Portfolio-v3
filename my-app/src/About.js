@@ -1,12 +1,14 @@
 import React from "react";
 import Menu from "./Menu.js";
 import styled from "styled-components";
+
 import "./Home.css";
 
-export default function Home() {
+export default function About() {
   return (
-    <div className="Home">
+    <div className="About">
       <Menu />
+      <div>About Page</div>
       <svg
         className="bottom"
         xmlns="http://www.w3.org/2000/svg"
