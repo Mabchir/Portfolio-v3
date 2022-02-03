@@ -1,6 +1,5 @@
 import React from "react";
 import "./Menu.css";
-import styled from 'styled-components';
 import MenuBar from "./images/menu-svgrepo-com.svg";
 
 export default function Menu(currentPage) {
@@ -25,28 +24,28 @@ export default function Menu(currentPage) {
       <div id="menus">
         <ul id="part1">
           <li className="Home">
-            <Link to="/Home">Home</Link>
+            <a href="./Home.js">Home</a>
           </li>
 
           <li className="About">
-            <Link to="./About.js">About</Link>
+            <a href="./About.js">About</a>
           </li>
 
           <li className="Contact">
-            <Link to="/Contact">Contact</Link>
+            <a href="./About.js">Contact</a>
           </li>
         </ul>
         <ul id="part2">
           <li className="Education">
-            <Link to="/Education">Education</Link>
+            <a href="./About.js">Education</a>
           </li>
 
           <li className="Portfolio">
-            <Link to="/Portfolio">Portfolio</Link>
+            <a href="./About.js">Portfolio</a>
           </li>
 
           <li className="Work">
-            <Link to="/Work">Work</Link>
+            <a href="./About.js">Work</a>
           </li>
         </ul>
       </div>

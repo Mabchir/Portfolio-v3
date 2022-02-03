@@ -12,6 +12,10 @@
   align-items: center;
   text-align: center;
 }
+.Menu a {
+  text-decoration: none;
+  color: #2f2e41;
+}
 
 .Menu #part1 {
   position: absolute;

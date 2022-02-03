@@ -1,6 +1,5 @@
 import React from "react";
 import Menu from "./Menu.js";
-import styled from "styled-components";
 import "./Home.css";
 
 export default function Home() {
