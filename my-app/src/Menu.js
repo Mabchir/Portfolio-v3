@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Menu.css";
+// import { Outlet, NavLink } from "react-router-dom";
+
 import MenuBar from "./images/menu-svgrepo-com.svg";
 
 export default function Menu(currentPage) {
@@ -12,19 +14,8 @@ export default function Menu(currentPage) {
     }
   }
 
-  let [title, setTitle] = useState("Hello World");
-
-  const showTitle = function () {
-    console.log("here");
-    setTitle("Hello Mariem");
-  };
-
   return (
     <div className="Menu">
-      <h1>{title}</h1>
-      <button id="btn" onClick={showTitle}>
-        Button
-      </button>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#2F2E41"
@@ -34,10 +25,23 @@ export default function Menu(currentPage) {
       </svg>
       <img src={MenuBar} onClick={showMenu} alt="menubar" />
       <div id="menus">
-        <ul id="part1">
+        <nav id="part1">
           <li className="Home">
             <a href="./Home.js">Home</a>
           </li>
+
+          {/* <NavLink
+            style={({ isActive }) => {
+              return {
+                display: "block",
+                color: isActive ? "underline" : "",
+              };
+            }}
+            to={`/home`}
+            
+          >
+            Home{" "}
+          </NavLink> */}
 
           <li className="About">
             <a href="./About.js">About</a>
@@ -46,8 +50,8 @@ export default function Menu(currentPage) {
           <li className="Contact">
             <a href="./About.js">Contact</a>
           </li>
-        </ul>
-        <ul id="part2">
+        </nav>
+        <nav id="part2">
           <li className="Education">
             <a href="./About.js">Education</a>
           </li>
@@ -59,7 +63,8 @@ export default function Menu(currentPage) {
           <li className="Work">
             <a href="./About.js">Work</a>
           </li>
-        </ul>
+        </nav>
+        {/* <Outlet /> */}
       </div>
     </div>
   );
