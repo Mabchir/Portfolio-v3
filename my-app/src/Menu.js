@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Menu.css";
 import MenuBar from "./images/menu-svgrepo-com.svg";
 
@@ -11,8 +11,20 @@ export default function Menu(currentPage) {
       x.style.display = "block";
     }
   }
+
+  let [title, setTitle] = useState("Hello World");
+
+  const showTitle = function () {
+    console.log("here");
+    setTitle("Hello Mariem");
+  };
+
   return (
     <div className="Menu">
+      <h1>{title}</h1>
+      <button id="btn" onClick={showTitle}>
+        Button
+      </button>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#2F2E41"
