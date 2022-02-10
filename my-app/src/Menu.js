@@ -1,6 +1,6 @@
 import React from "react";
 import "./Menu.css";
-// import { Outlet, NavLink } from "react-router-dom";
+import { Outlet, NavLink } from "react-router-dom";
 
 import MenuBar from "./images/menu-svgrepo-com.svg";
 
@@ -26,45 +26,78 @@ export default function Menu(currentPage) {
       <img src={MenuBar} onClick={showMenu} alt="menubar" />
       <div id="menus">
         <nav id="part1">
-          <li className="Home">
-            <a href="./Home.js">Home</a>
-          </li>
-
-          {/* <NavLink
+          <NavLink
             style={({ isActive }) => {
               return {
-                display: "block",
-                color: isActive ? "underline" : "",
+                fontWeight: isActive ? "bold" : "",
               };
             }}
-            to={`/home`}
-            
+            to="/"
+            key="home_page"
           >
-            Home{" "}
-          </NavLink> */}
+            Home
+          </NavLink>
 
-          <li className="About">
-            <a href="./About.js">About</a>
-          </li>
+          <NavLink
+            style={({ isActive }) => {
+              return {
+                fontWeight: isActive ? "bold" : "",
+              };
+            }}
+            to="/about"
+            key="about_page"
+          >
+            About
+          </NavLink>
 
-          <li className="Contact">
-            <a href="./About.js">Contact</a>
-          </li>
+          <NavLink
+            style={({ isActive }) => {
+              return {
+                fontWeight: isActive ? "bold" : "",
+              };
+            }}
+            to="/contact"
+            key="contact_page"
+          >
+            Contact
+          </NavLink>
         </nav>
         <nav id="part2">
-          <li className="Education">
-            <a href="./About.js">Education</a>
-          </li>
-
-          <li className="Portfolio">
-            <a href="./About.js">Portfolio</a>
-          </li>
-
-          <li className="Work">
-            <a href="./About.js">Work</a>
-          </li>
+          <NavLink
+            style={({ isActive }) => {
+              return {
+                fontWeight: isActive ? "bold" : "",
+              };
+            }}
+            to="/education"
+            key="edu_page"
+          >
+            Education
+          </NavLink>
+          <NavLink
+            style={({ isActive }) => {
+              return {
+                fontWeight: isActive ? "bold" : "",
+              };
+            }}
+            to="/portfolio"
+            key="port_page"
+          >
+            Portfolio
+          </NavLink>
+          <NavLink
+            style={({ isActive }) => {
+              return {
+                fontWeight: isActive ? "bold" : "",
+              };
+            }}
+            to="/work"
+            key="work_page"
+          >
+            Work
+          </NavLink>
         </nav>
-        {/* <Outlet /> */}
+        <Outlet></Outlet>
       </div>
     </div>
   );
