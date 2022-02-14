@@ -3,3 +3,26 @@
   bottom: 0px;
   right: 0%;
 }
+
+.home_svg {
+  position: fixed;
+  bottom: 130px;
+  left: 370px;
+  transform: scale(0.75);
+}
+
+.description {
+  position: fixed;
+  width: 424px;
+  height: 196px;
+  font-size: 30px;
+  left: 70%;
+  bottom: 400px;
+}
+
+.description h2 {
+  font-weight: bold;
+}
+.description h3 {
+  font-weight: 100;
+}

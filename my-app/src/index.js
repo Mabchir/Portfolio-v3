@@ -3,6 +3,7 @@ import { render } from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
 import App from "./App";
+import Home from "./routes/home";
 import About from "./routes/about";
 import Contact from "./routes/contact";
 import Education from "./routes/education";
@@ -14,6 +15,7 @@ render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />}>
+        <Route path="/" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="/education" element={<Education />}></Route>
