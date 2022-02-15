@@ -19,14 +19,14 @@
   position: absolute;
   left: 4.73%;
 
-  top: 28.22%;
+  top: 35%;
 }
 
 .Menu #part2 {
   position: absolute;
   left: 36.73%;
 
-  top: 47.22%;
+  top: 55%;
 }
 
 .Menu a:hover {
@@ -58,28 +58,23 @@
   }
 }
 
-@media only screen and (max-width: 390px) {
-  .Menu img {
-    visibility: visible;
+@media only screen and (max-width: 414px) {
+  .Menu a {
+    font-size: 20px;
+    margin-right: 60px;
   }
-
-  .Menu NavLink {
-    font-size: 24px;
-    list-style-type: circle;
-    display: flex;
-    justify-content: center;
+  .Menu #part1 {
+    position: fixed;
+    left: 40px;
+    top: 100px;
   }
-  .Menu #part1,
   .Menu #part2 {
-    position: static;
-    margin: 0px;
-  }
-
-  .Menu #menus {
-    display: none;
+    position: fixed;
+    left: 40px;
+    top: 150px;
   }
 
   svg {
-    visibility: hidden;
+    transform: scale(1);
   }
 }
