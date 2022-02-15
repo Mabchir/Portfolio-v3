@@ -5,7 +5,11 @@ import { Outlet, NavLink } from "react-router-dom";
 export default function Menu(currentPage) {
   return (
     <div className="Menu">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <svg
+        className="upper"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
         <path
           fill="#2F2E41"
           fillOpacity="1"

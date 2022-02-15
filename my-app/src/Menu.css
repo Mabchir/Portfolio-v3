@@ -1,6 +1,10 @@
 .Menu {
   position: relative;
 }
+
+.Menu .upper {
+  transform: scale(1.4);
+}
 .Menu a {
   list-style-type: none;
   display: inline;

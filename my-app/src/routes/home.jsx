@@ -8,7 +8,7 @@ export default function Home() {
     <div className="Home">
       <div className="description">
         <h2>Mariem Bchir</h2>
-        <h3>a full-stack developper from Tunisia based in the USA</h3>
+        <h3>a full-stack developer from Tunisia based in the USA</h3>
       </div>
 
       <MySvgFile1 className="home_svg" />
