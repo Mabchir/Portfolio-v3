@@ -1,60 +1,59 @@
-.Menu {
+.menu {
   position: relative;
 }
 
-.Menu .upper {
+.menu .upper {
   transform: scale(1.4);
 }
-.Menu a {
+.menu a {
   list-style-type: none;
   display: inline;
   margin-right: 80px;
   color: #2f2e41;
-  font-size: 24px;
+  font-size: 20px;
   font-style: normal;
   font-weight: lighter;
   align-items: center;
   text-align: center;
-
   text-decoration: none;
 }
 
-.Menu #part1 {
+.menu #part1 {
   position: absolute;
-  left: 4.73%;
+  left: 1.73%;
 
-  top: 35%;
+  top: 28%;
 }
 
-.Menu #part2 {
+.menu #part2 {
   position: absolute;
   left: 36.73%;
 
   top: 55%;
 }
 
-.Menu a:hover {
+.menu a:hover {
   text-decoration: underline;
 }
 
-.Menu img {
+.menu img {
   visibility: hidden;
   width: 50px;
 }
 @media only screen and (max-width: 820px) {
-  .Menu NavLink {
+  .menu NavLink {
     font-size: 14px;
     margin-right: 40px;
   }
 
-  .Menu #part1 {
+  .menu #part1 {
     position: absolute;
     left: -0.73%;
 
     top: 18.22%;
   }
 
-  .Menu #part2 {
+  .menu #part2 {
     position: absolute;
     left: 29.73%;
 
@@ -63,16 +62,16 @@
 }
 
 @media only screen and (max-width: 414px) {
-  .Menu a {
+  .menu a {
     font-size: 20px;
     margin-right: 60px;
   }
-  .Menu #part1 {
+  .menu #part1 {
     position: fixed;
     left: 40px;
     top: 100px;
   }
-  .Menu #part2 {
+  .menu #part2 {
     position: fixed;
     left: 40px;
     top: 150px;

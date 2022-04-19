@@ -4,7 +4,7 @@ import { Outlet, NavLink } from "react-router-dom";
 
 export default function Menu(currentPage) {
   return (
-    <div className="Menu">
+    <div className="menu">
       <svg
         className="upper"
         xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +41,6 @@ export default function Menu(currentPage) {
           >
             About
           </NavLink>
-
           <NavLink
             style={({ isActive }) => {
               return {

@@ -1,0 +1,32 @@
+.EduCard {
+  border: 1px solid black;
+  border-radius: 25px;
+  width: 200px;
+  z-index: 1;
+  position: relative;
+  height: 290px;
+}
+
+.EduCard h1,
+.EduCard p {
+  font-size: 18px;
+  z-index: 1;
+  position: relative;
+  top: -60px;
+}
+
+.EduCard h1 {
+    margin-top: 30px;
+}
+
+.EduCard p {
+  line-height: 40px;
+}
+
+.EduCard img {
+  visibility: visible;
+  width: 110px;
+  z-index: 2;
+  position: relative;
+  top: -60px;
+}
